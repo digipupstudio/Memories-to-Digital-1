@@ -27,13 +27,15 @@ const Hero = () => {
 
           {/* Header */}
           <div className="flex items-center gap-3 mb-8">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-neon-cyan to-neon-purple" />
+            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-neon-cyan to-neon-purple flex items-center justify-center">
+              <Film className="w-5 h-5 text-background" />
+            </div>
             <div>
               <div className="flex items-center gap-2">
-                <span className="font-semibold text-foreground">Happy Customers</span>
-                <span className="text-xs px-2 py-0.5 rounded-full bg-primary/20 text-primary">500+</span>
+                <span className="font-semibold text-foreground">Memories to Digital</span>
+                <span className="text-xs px-2 py-0.5 rounded-full bg-primary/20 text-primary font-bold">15 Years Exp.</span>
               </div>
-              <span className="text-xs text-muted-foreground uppercase tracking-wider">Conversion History</span>
+              <span className="text-xs text-muted-foreground uppercase tracking-wider italic">"Treat each order as if it was my own"</span>
             </div>
           </div>
 
@@ -97,22 +99,22 @@ const Hero = () => {
             {/* Service name */}
             <p className="text-xs uppercase tracking-widest text-primary mb-1">Featured Service</p>
             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-1">
-              Professional Digitization
+              Preserving Memories in College Place
             </h2>
             <div className="flex items-center gap-3 mb-6">
               <div className="flex items-center gap-1">
                 <Star className="w-4 h-4 text-primary fill-primary" />
-                <span className="text-sm text-muted-foreground">4.9</span>
+                <span className="text-sm text-muted-foreground">15 Years Experience</span>
               </div>
               <span className="text-sm text-muted-foreground">•</span>
-              <span className="text-sm font-mono text-primary">7 - 14 days</span>
+              <span className="text-sm font-mono text-primary">Washington State</span>
             </div>
 
             {/* Description */}
             <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Info</p>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-sm mb-8">
-              Convert your precious VHS, MiniDV, Hi8, and cassette tapes into crystal-clear digital files. 
-              We handle everything from pickup to cloud delivery with museum-grade care.
+              Convert your precious VHS, BETA, MiniDV, 8mm film, and audio records into digital files.
+              We treat each person's order as if it was our own with 15 years of expertise.
             </p>
 
             {/* Buttons */}
