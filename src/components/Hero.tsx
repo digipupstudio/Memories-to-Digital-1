@@ -1,13 +1,13 @@
-import { Star, Play } from "lucide-react";
+import { Star, Play, CheckCircle2 } from "lucide-react";
 import heroReel from "@/assets/hero-reel-center.png";
 import vhsImg from "@/assets/vhs-tape.jpg";
 import cassetteImg from "@/assets/cassette-tape.jpg";
 
-const services = [
-  { num: "01", title: "VHS to Digital", format: "MP4", duration: "~2hrs" },
-  { num: "02", title: "Cassette to Digital", format: "WAV", duration: "~1hr" },
-  { num: "03", title: "MiniDV Conversion", format: "MP4", duration: "~1.5hrs" },
-  { num: "04", title: "Hi8 / Video8", format: "MP4", duration: "~2hrs" },
+const clients = [
+  { num: "01", name: "Sarah M.", tapes: "12 VHS Tapes", status: "Delivered", date: "Feb 2026" },
+  { num: "02", name: "James T.", tapes: "8 MiniDV Cassettes", status: "In Progress", date: "Mar 2026" },
+  { num: "03", name: "Linda R.", tapes: "5 Hi8 Tapes", status: "Delivered", date: "Jan 2026" },
+  { num: "04", name: "Robert K.", tapes: "20 Audio Cassettes", status: "Delivered", date: "Dec 2025" },
 ];
 
 const Hero = () => {
