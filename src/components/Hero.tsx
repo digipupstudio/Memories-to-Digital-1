@@ -12,7 +12,7 @@ const clients = [
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen pt-24 overflow-hidden">
+    <section id="home" className="relative min-h-screen pt-24 overflow-hidden">
       <div className="absolute inset-0 grid-bg opacity-10" />
 
       <div className="relative z-10 flex flex-col lg:flex-row min-h-[calc(100vh-6rem)]">
@@ -133,24 +133,6 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Bottom playback bar */}
-      <div className="absolute bottom-0 left-0 right-0 z-30 glass border-t border-border/50 px-6 py-3">
-        <div className="max-w-7xl mx-auto flex items-center gap-4">
-          <button className="text-muted-foreground hover:text-foreground transition-colors">←</button>
-          <button className="w-10 h-10 rounded-full bg-primary flex items-center justify-center hover:scale-110 transition-transform">
-            <Play className="w-4 h-4 text-primary-foreground" fill="currentColor" />
-          </button>
-          <button className="text-muted-foreground hover:text-foreground transition-colors">→</button>
-          <div className="flex-1 mx-4">
-            <div className="h-1 bg-muted rounded-full overflow-hidden">
-              <div className="h-full w-1/3 bg-gradient-to-r from-primary to-neon-purple rounded-full" />
-            </div>
-          </div>
-          <span className="text-xs font-mono text-muted-foreground">0:07</span>
-          <span className="text-xs text-muted-foreground/50">/</span>
-          <span className="text-xs font-mono text-muted-foreground">2:14</span>
-        </div>
-      </div>
     </section>
   );
 };
