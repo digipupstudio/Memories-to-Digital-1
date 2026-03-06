@@ -43,8 +43,12 @@ const Navbar = () => {
 
         {/* Right: Actions */}
         <div className="flex items-center gap-3">
-          <button className="p-2 rounded-xl hover:bg-muted/50 transition-colors">
-            <Phone className="w-4 h-4 text-muted-foreground" />
+          <button
+            onClick={() => window.location.href = 'tel:+1234567890'}
+            className="p-2 rounded-xl hover:bg-muted/50 hover:text-primary transition-all duration-200"
+            title="Call us"
+          >
+            <Phone className="w-4 h-4 text-muted-foreground hover:text-primary" />
           </button>
 
           {/* Mobile Menu Button */}
