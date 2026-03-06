@@ -1,15 +1,14 @@
 import { Star, Film } from "lucide-react";
+import { useBookingForm } from "@/contexts/BookingFormContext";
 import heroReel from "@/assets/hero-reel-center.png";
 import vhsImg from "@/assets/vhs-tape.jpg";
 import cassetteImg from "@/assets/cassette-tape.jpg";
 
 const Hero = () => {
+  const { openBookingForm } = useBookingForm();
+
   const handleSeeServices = () => {
     document.getElementById("services")?.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const handleOrderNow = () => {
-    document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -85,7 +84,7 @@ const Hero = () => {
 
             {/* Buttons */}
             <div className="flex items-center gap-4">
-              <button onClick={handleOrderNow} className="px-6 py-3 rounded-full bg-primary text-primary-foreground font-semibold hover:shadow-[0_0_30px_hsl(var(--neon-cyan)/0.3)] transition-all duration-300 hover:scale-105">
+              <button onClick={openBookingForm} className="px-6 py-3 rounded-full bg-primary text-primary-foreground font-semibold hover:shadow-[0_0_30px_hsl(var(--neon-cyan)/0.3)] transition-all duration-300 hover:scale-105">
                 Order Now
               </button>
               <button onClick={handleSeeServices} className="px-6 py-3 rounded-full border border-border text-foreground font-semibold hover:border-primary/50 transition-all">
